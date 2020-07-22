@@ -1,6 +1,7 @@
 # CHALLENGE 1 - Article
 
 ![Design preview for the Article preview component coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Article preview component coding challenge](./Screenshots/normal_preview.png)
 
 ## Welcome! 👋
 
