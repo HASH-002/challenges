@@ -1,21 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link href="normalize.css" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <title>Article</title>
 </head>
+
 <body>
+  <div class="cover">
+    <img id="display" src="images/drawers.jpg">
+    <section class="container">
+      <div class="class1"><strong>Shift the overall look and feel by adding these wonderful
+          touches to furniture in your home</strong> </div>
+      <div class="class2">Ever been in a room and felt like something was missing? Perhaps
+        it felt slightly bare and uninviting. I’ve got some simple tips
+        to help you make any room feel complete.</div>
+      <div class="class3">
+        <img src="images/avatar-michelle.jpg">
+        <div class="class4">
+          <h4>Michelle Appleton</h4>
+          <h5>28 JUN 2020</h5>
+        </div>
+        <div class="tooltip">
+          <img id="havana" onclick="toggleHide()" src="images/icon-share.svg">
+          <span id="btn" class="tooltiptext">
+           <h5>S H A R E</h5> 
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/icon-facebook.svg"></a>
+            <a href="https://www.twitter.com/" target="_blank"><img src="images/icon-twitter.svg"></a>
+            <a href="https://www.twitter.com/" target="_blank"><img src="images/icon-pinterest.svg"></a>
+          </span>
+        </div>
+      </div>
+    </section>
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
+  </div>
 
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
-  
+  <script>
+    function toggleHide() {
+      // let btn = document.getElementById('btn');
+      let para = document.getElementById('btn');
+      if (para.style.display != 'none') {
+        para.style.display = 'none';
+      }
+      else {
+        para.style.display = 'block';
+      }
+    }
+  </script>
+
 </body>
+
 </html>
